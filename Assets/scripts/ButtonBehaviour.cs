@@ -15,39 +15,42 @@ public class ButtonBehaviour : MonoBehaviour
     public GameObject Home;
     public GameObject Search;
     public GameObject Profile;
-    public void Setactive()
+    public void SetHome()
     {
-
-        // Home.gameObject.SetActive(true);
-        // Search.gameObject.SetActive(true);
-        // Profile.gameObject.SetActive(true);
-
-        if (Home.activeInHierarchy && !Search.activeInHierarchy && !Profile.activeInHierarchy)
+        if (!Home.activeInHierarchy)
         {
-        Home.gameObject.SetActive(true);
-        // Search.gameObject.SetActive(false);
-        // Profile.gameObject.SetActive(false);  
-        } 
-         else if (Search.activeInHierarchy && !Home.activeInHierarchy && !Profile.activeInHierarchy)
-        {
-        Search.gameObject.SetActive(true);
-        // Home.gameObject.SetActive(false);
-        // Profile.gameObject.SetActive(false);   
-        } 
-        else if (Profile.activeInHierarchy && !Home.activeInHierarchy && !Profile.activeInHierarchy)
-        {
-       Profile.gameObject.SetActive(true);
-        // Home.gameObject.SetActive(false);
-        // Search.gameObject.SetActive(false);   
+            Home.gameObject.SetActive(true);
+            Search.gameObject.SetActive(false);
+            Profile.gameObject.SetActive(false);
         }
-        
     }
 
-        public void Setinactive()
+        public void SetSearch()
     {
-        Home.gameObject.SetActive(false);
-        Search.gameObject.SetActive(false);
-        Profile.gameObject.SetActive(false);        
-
+        if (!Search.activeInHierarchy)
+        {
+            Search.gameObject.SetActive(true);
+            Home.gameObject.SetActive(false);
+            Profile.gameObject.SetActive(false);
+        }
     }
+
+        public void SetProfile()
+    {
+        if (!Profile.activeInHierarchy)
+        {
+            Profile.gameObject.SetActive(true);
+            Home.gameObject.SetActive(false);
+            Search.gameObject.SetActive(false);
+        }        
+    }
+
+    //     public void Setinactive()
+    // {
+
+    //     Home.gameObject.SetActive(false);
+    //     Search.gameObject.SetActive(false);
+    //     Profile.gameObject.SetActive(false);        
+
+    // }
 }
