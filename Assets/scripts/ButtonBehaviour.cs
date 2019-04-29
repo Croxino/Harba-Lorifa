@@ -5,16 +5,12 @@ using UnityEngine.UI;
 
 public class ButtonBehaviour : MonoBehaviour
 {
-    public void Setbutton (string text)
-    {
-        Text txt = transform.Find("Text").GetComponent<Text>();
-        txt.text = text;
-
-    }
 
     public GameObject Home;
     public GameObject Search;
     public GameObject Profile;
+    public GameObject Harba;
+    public GameObject Menu;
     public void SetHome()
     {
         if (!Home.activeInHierarchy)
@@ -45,6 +41,15 @@ public class ButtonBehaviour : MonoBehaviour
         }        
     }
 
+        public void viewCards()
+    {
+        if (!Harba.activeInHierarchy)
+        {
+            Harba.gameObject.SetActive(true);
+            Menu.gameObject.SetActive(false);
+            Search.gameObject.SetActive(false);
+        }        
+    }
     //     public void Setinactive()
     // {
 
