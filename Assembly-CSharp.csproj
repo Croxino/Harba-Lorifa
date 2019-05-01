@@ -54,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\scripts\ButtonBehaviour.cs" />
+     <Compile Include="Assets\scripts\searchFilter.cs" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>D:/Harba Lorifa Unity/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
