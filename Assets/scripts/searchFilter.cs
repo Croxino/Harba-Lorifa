@@ -6,21 +6,25 @@ using UnityEngine.UI;
 public class searchFilter : MonoBehaviour
 {
 
-string filter;
+
 
 public InputField searchbar;
 //public InputField input;
 public GameObject cardobjects;
+public GameObject cardContainer;
 public List<GameObject> cardList = new List<GameObject>();
 //public GameObject[] cards = new GameObject[0];
 
-    public void search(string filter)
+    public void search()
     {
         foreach (var card in cardList)
         {
             if (searchbar.text == card.name)
             {
-                Instantiate(card);
+               //var cardinsta =  Instantiate(card, new Vector2(733,460), transform.rotation);
+               var cardinsta = Instantiate(card,Vector3.zero, Quaternion.identity, cardContainer.transform);
+              // cardinsta.transform.parent = cardContainer.transform;
+               cardinsta.SetActive(true);
             }
 
         }
@@ -40,7 +44,7 @@ public List<GameObject> cardList = new List<GameObject>();
         // }
         Debug.Log(searchbar.text);
         Debug.Log("list: " + cardobjects);
-        Debug.Log("list: " + filter);
+
 
 
 
