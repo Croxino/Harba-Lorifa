@@ -18,7 +18,7 @@ public List<GameObject> cardList = new List<GameObject>();
     {
         foreach (var card in cardList)
         {
-            if (searchbar.text == card.name)
+            if (searchbar.text == card.name.ToLower())
             {
 
                card.SetActive(true);
