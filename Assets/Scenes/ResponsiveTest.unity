@@ -1355,7 +1355,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41c7926e7aaec3e46ac1141fbd58fe2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  email: {fileID: 928750147}
+  username: {fileID: 928750147}
   password: {fileID: 1834387556}
   hPassword: {fileID: 898963716}
   submit: {fileID: 188552001}

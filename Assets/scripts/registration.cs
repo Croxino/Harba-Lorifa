@@ -8,7 +8,7 @@ using System.Net.Mail;
 
 public class registration : MonoBehaviour
 {
-    public InputField email;
+    public InputField username;
     public InputField password;
     public InputField hPassword;
 
@@ -20,12 +20,12 @@ public class registration : MonoBehaviour
 
     IEnumerator Register(){
             WWWForm form = new WWWForm();
-            form.AddField("email", email.text);
+            form.AddField("username", username.text);
             form.AddField("password", password.text);
 
         
         UnityWebRequest www = UnityWebRequest.Post("http://localhost/sqlconnect/register.php",form);
-        yield return www;
+        yield return www.SendWebRequest();
 
         if (www.downloadHandler.text == "0")
         {
@@ -34,7 +34,7 @@ public class registration : MonoBehaviour
         }
         else
         {
-            Debug.Log("error" + www.error);
+            Debug.Log( "user creation failed" + www.error);
         }
     }
     public void verifyInput()
@@ -42,7 +42,7 @@ public class registration : MonoBehaviour
          if(password.text == hPassword.text)
         {
             //submit.interactable = true;
-            submit.interactable = (email.text.Length >= 8 && email.text.Contains("@") || email.text.Contains(".com"));
+            submit.interactable = (username.text.Length >= 8 && password.text.Length >= 1 && hPassword.text.Length >= 1 && username.text.Contains("@") && username.text.Contains(".com") || username.text.Contains(".nl") );
          }
          else
          {
