@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Networking;
-using System.Net.Mail;
+
 
 
 public class registration : MonoBehaviour
@@ -39,6 +39,8 @@ public class registration : MonoBehaviour
     }
     public void verifyInput()
     {
+        //for now the register button only becomes interactible when the requirements match. but preferably it should always be interactable and give a popup notification
+        //if anything went wrong, only when everything is correct you should be able to create an account.
          if(password.text == hPassword.text)
         {
             //submit.interactable = true;

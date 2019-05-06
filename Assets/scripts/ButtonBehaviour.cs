@@ -11,6 +11,7 @@ public class ButtonBehaviour : MonoBehaviour
     public GameObject Profile;
     public GameObject Harba;
     public GameObject Menu;
+    public GameObject loggedIn;
     public void SetHome()
     {
         if (!Home.activeInHierarchy)
@@ -19,7 +20,9 @@ public class ButtonBehaviour : MonoBehaviour
             Search.gameObject.SetActive(false);
             Profile.gameObject.SetActive(false);
         }
+
     }
+
 
         public void SetSearch()
     {
@@ -29,7 +32,9 @@ public class ButtonBehaviour : MonoBehaviour
             Home.gameObject.SetActive(false);
             Profile.gameObject.SetActive(false);
         }
+
     }
+
 
         public void SetProfile()
     {
@@ -38,8 +43,17 @@ public class ButtonBehaviour : MonoBehaviour
             Profile.gameObject.SetActive(true);
             Home.gameObject.SetActive(false);
             Search.gameObject.SetActive(false);
-        }        
+        }     
+
+        if (!loggedIn.activeInHierarchy && DBManager.loggedIn == true)
+        {
+            loggedIn.gameObject.SetActive(true);
+            Home.gameObject.SetActive(false);
+            Search.gameObject.SetActive(false);
+            Profile.gameObject.SetActive(false);
+        }     
     }
+
 
         public void viewCards()
     {
