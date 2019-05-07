@@ -5,9 +5,11 @@ using UnityEngine;
 public static class DBManager
 {
     public static string name;
-    public static int score;
+    public static string code;
 
     public static bool loggedIn {get{ return name != null;}}
+
+    public static bool coupon {get{ return code != null;}}
 
     public static void logOut()
     {

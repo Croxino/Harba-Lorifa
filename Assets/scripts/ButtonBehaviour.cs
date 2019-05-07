@@ -33,6 +33,14 @@ public class ButtonBehaviour : MonoBehaviour
             Profile.gameObject.SetActive(false);
         }
 
+                if (loggedIn.activeInHierarchy && DBManager.loggedIn == true)
+        {
+            loggedIn.gameObject.SetActive(false);
+            Home.gameObject.SetActive(false);
+            Search.gameObject.SetActive(true);
+            Profile.gameObject.SetActive(false);
+        } 
+
     }
 
 

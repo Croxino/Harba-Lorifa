@@ -22,15 +22,20 @@ public class Login : MonoBehaviour
             WWWForm form = new WWWForm();
             form.AddField("username", username.text);
             form.AddField("password", password.text);
+            
 
         
         UnityWebRequest www = UnityWebRequest.Post("http://localhost/sqlconnect/login.php",form);
         yield return www.SendWebRequest();
+                //Debug.Log(www.downloadHandler.text);
+                Debug.Log(DBManager.code);
 
         if (www.downloadHandler.text[0] == '0')
         {
             DBManager.name = username.text;
-            //DBManager.score = int.Parse(www.downloadHandler.text.Split('\t')[1]);
+//            DBManager.code = int.Parse(www.downloadHandler.text.Split('\t')[1]);
+            DBManager.code = www.downloadHandler.text;
+
             
             loggedin.gameObject.SetActive(true);
             profile.gameObject.SetActive(false);
@@ -41,9 +46,11 @@ public class Login : MonoBehaviour
         {
             Debug.Log("user login failed" + www.error);
         }
-        Debug.Log(www.error);
-        Debug.Log(www.downloadHandler.text);
-        Debug.Log(DBManager.loggedIn);
+        // Debug.Log("error 1" + www.error);
+        // Debug.Log(www.downloadHandler.text);
+        // Debug.Log(www.downloadHandler.text[0]);
+        // Debug.Log(DBManager.loggedIn);
+                        Debug.Log(DBManager.code);
     }
 
     public void logout(){
