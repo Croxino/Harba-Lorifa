@@ -28,29 +28,32 @@ public class Login : MonoBehaviour
         UnityWebRequest www = UnityWebRequest.Post("http://localhost/sqlconnect/login.php",form);
         yield return www.SendWebRequest();
                 //Debug.Log(www.downloadHandler.text);
-                Debug.Log(DBManager.code);
 
         if (www.downloadHandler.text[0] == '0')
         {
             DBManager.name = username.text;
+            string replacedString = www.downloadHandler.text.Replace("0", string.Empty);
+
 //            DBManager.code = int.Parse(www.downloadHandler.text.Split('\t')[1]);
-            DBManager.code = www.downloadHandler.text;
+            DBManager.code = replacedString;
+
+
 
             
             loggedin.gameObject.SetActive(true);
             profile.gameObject.SetActive(false);
             password.text = "";
+                    Debug.Log(replacedString);
 
         }
         else
         {
             Debug.Log("user login failed" + www.error);
         }
-        // Debug.Log("error 1" + www.error);
-        // Debug.Log(www.downloadHandler.text);
-        // Debug.Log(www.downloadHandler.text[0]);
-        // Debug.Log(DBManager.loggedIn);
-                        Debug.Log(DBManager.code);
+
+        Debug.Log("DH text " + www.downloadHandler.text);
+        Debug.Log("DH text array" + www.downloadHandler.text[0]);
+        Debug.Log("DBManager " + DBManager.code);
     }
 
     public void logout(){

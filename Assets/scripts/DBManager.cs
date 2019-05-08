@@ -9,7 +9,7 @@ public static class DBManager
 
     public static bool loggedIn {get{ return name != null;}}
 
-    public static bool coupon {get{ return code != null;}}
+    public static string coupon {get{ return code;}}
 
     public static void logOut()
     {

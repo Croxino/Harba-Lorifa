@@ -23,11 +23,12 @@ public class coupon : MonoBehaviour
             UnityWebRequest www = UnityWebRequest.Post("http://localhost/sqlconnect/coode.php", form);
             yield return www.SendWebRequest();
             Debug.Log(DBManager.code);
+                        Debug.Log(www.downloadHandler.text);
 
             //Debug.Log(www.error);
         
 
-        if (DBManager.code == "HRB")
+        if (DBManager.code == code.text)
         {
             //DBManager.code = code.text;
             //DBManager.score = int.Parse(www.downloadHandler.text.Split('\t')[1]);
@@ -37,8 +38,9 @@ public class coupon : MonoBehaviour
         }
         else
         {
-            Debug.Log("user login failed" + www.error);
+            Debug.Log("incorrect code" + www.error);
         }
+        Debug.Log("inputfield message:" + code.text);
         Debug.Log(DBManager.code);
         Debug.Log(www.error);
         Debug.Log(www.downloadHandler.text);
