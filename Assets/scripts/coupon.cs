@@ -8,6 +8,11 @@ public class coupon : MonoBehaviour
 {
 
     public InputField code;
+    public GameObject start;
+    public GameObject popup;
+    public GameObject download;
+
+
 
     public void callCoupon()
     {
@@ -20,10 +25,9 @@ public class coupon : MonoBehaviour
 
             WWWForm form = new WWWForm();
             form.AddField("score", code.text);
-            UnityWebRequest www = UnityWebRequest.Post("http://localhost/sqlconnect/coode.php", form);
+            UnityWebRequest www = UnityWebRequest.Post("http://i373610.hera.fhict.nl/sqlconnect/coode.php", form);
             yield return www.SendWebRequest();
-            Debug.Log(DBManager.code);
-                        Debug.Log(www.downloadHandler.text);
+
 
             //Debug.Log(www.error);
         
@@ -33,19 +37,18 @@ public class coupon : MonoBehaviour
             //DBManager.code = code.text;
             //DBManager.score = int.Parse(www.downloadHandler.text.Split('\t')[1]);
             Debug.Log("it worked");
-
+            popup.gameObject.SetActive(false);
+            download.gameObject.SetActive(false);
+            start.gameObject.SetActive(true);
 
         }
         else
         {
             Debug.Log("incorrect code" + www.error);
         }
-        Debug.Log("inputfield message:" + code.text);
-        Debug.Log(DBManager.code);
-        Debug.Log(www.error);
-        Debug.Log(www.downloadHandler.text);
-        Debug.Log(www.downloadHandler.text[0]);
-        Debug.Log(DBManager.loggedIn);
+
     }
+
+
 
 }

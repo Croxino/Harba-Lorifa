@@ -8,6 +8,12 @@ public class userIsLoggedin : MonoBehaviour
     public GameObject accpopup;
         public GameObject couponpopup;
 
+    public GameObject downloadpop;
+
+    public void downloadreq()
+    {
+        downloadpop.gameObject.SetActive(true);
+    }
     public void loggedIn (){
         if (DBManager.loggedIn == false)
         {
@@ -16,5 +22,6 @@ public class userIsLoggedin : MonoBehaviour
         {
             couponpopup.gameObject.SetActive(true);
         }
+    
     }
 }

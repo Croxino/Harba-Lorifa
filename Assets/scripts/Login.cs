@@ -25,7 +25,7 @@ public class Login : MonoBehaviour
             
 
         
-        UnityWebRequest www = UnityWebRequest.Post("http://localhost/sqlconnect/login.php",form);
+        UnityWebRequest www = UnityWebRequest.Post("http://i373610.hera.fhict.nl/sqlconnect/login.php",form);
         yield return www.SendWebRequest();
                 //Debug.Log(www.downloadHandler.text);
 
@@ -43,17 +43,12 @@ public class Login : MonoBehaviour
             loggedin.gameObject.SetActive(true);
             profile.gameObject.SetActive(false);
             password.text = "";
-                    Debug.Log(replacedString);
 
         }
         else
         {
             Debug.Log("user login failed" + www.error);
         }
-
-        Debug.Log("DH text " + www.downloadHandler.text);
-        Debug.Log("DH text array" + www.downloadHandler.text[0]);
-        Debug.Log("DBManager " + DBManager.code);
     }
 
     public void logout(){

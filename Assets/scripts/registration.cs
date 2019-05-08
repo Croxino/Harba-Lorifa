@@ -24,7 +24,7 @@ public class registration : MonoBehaviour
             form.AddField("password", password.text);
 
         
-        UnityWebRequest www = UnityWebRequest.Post("http://localhost/sqlconnect/register.php",form);
+        UnityWebRequest www = UnityWebRequest.Post("http://i373610.hera.fhict.nl/sqlconnect/register.php",form);
         yield return www.SendWebRequest();
 
         if (www.downloadHandler.text == "0")
