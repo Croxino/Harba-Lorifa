@@ -6,6 +6,8 @@ TagManager:
   tags:
   - valkenswaard
   - breda
+  - HLOR
+  - HLSP
   layers:
   - Default
   - TransparentFX

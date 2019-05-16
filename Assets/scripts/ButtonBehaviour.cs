@@ -12,6 +12,25 @@ public class ButtonBehaviour : MonoBehaviour
     public GameObject Harba;
     public GameObject Menu;
     public GameObject loggedIn;
+
+
+        // private void Start() {
+        //     HLOR = GameObject.FindGameObjectWithTag("HLOR");
+        //     HLSP = GameObject.FindGameObjectWithTag("HLSP");
+
+            
+        //     if (HLOR == null)
+        //     {
+        //         HLOR = GameObject.FindWithTag("HLOR");
+        //                     Debug.Log("works");
+
+        //     }
+        //     else
+        //     {
+        //         Debug.Log("cant find");
+        //     }
+
+        // }
     public void SetHome()
     {
         if (!Home.activeInHierarchy)
@@ -72,6 +91,8 @@ public class ButtonBehaviour : MonoBehaviour
             Search.gameObject.SetActive(false);
         }        
     }
+
+
     //     public void Setinactive()
     // {
 
