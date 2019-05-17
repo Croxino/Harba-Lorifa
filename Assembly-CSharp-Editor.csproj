@@ -167,6 +167,12 @@
  <Reference Include="Unity.CollabProxy.Editor">
  <HintPath>D:/Harba Lorifa Unity/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
+ <Reference Include="Editor">
+ <HintPath>D:/Harba Lorifa Unity/Library/ScriptAssemblies/Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="XiaomiSupport">
+ <HintPath>D:/Harba Lorifa Unity/Library/ScriptAssemblies/XiaomiSupport.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.TextMeshPro">
  <HintPath>D:/Harba Lorifa Unity/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
@@ -451,6 +457,12 @@
  </Reference>
  <Reference Include="UnityEditor.Purchasing">
  <HintPath>D:/Harba Lorifa Unity/Library/PackageCache/com.unity.purchasing@2.0.3/Editor/UnityEditor.Purchasing.dll</HintPath>
+ </Reference>
+ <Reference Include="ChannelPurchase">
+ <HintPath>D:/Harba Lorifa Unity/Library/PackageCache/com.unity.xiaomi@1.0.3/ChannelPurchase.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityStore">
+ <HintPath>D:/Harba Lorifa Unity/Library/PackageCache/com.unity.xiaomi@1.0.3/UnityStore.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>C:/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>

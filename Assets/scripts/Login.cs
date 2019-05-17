@@ -10,7 +10,7 @@ public class Login : MonoBehaviour
     public InputField password;
     public GameObject loggedin;
     public GameObject profile;
-    public Button submit;
+
 
   
     public void callLogin(){
@@ -27,14 +27,15 @@ public class Login : MonoBehaviour
         
         UnityWebRequest www = UnityWebRequest.Post("http://i373610.hera.fhict.nl/sqlconnect/login.php",form);
         yield return www.SendWebRequest();
-                //Debug.Log(www.downloadHandler.text);
+
 
         if (www.downloadHandler.text[0] == '0')
         {
             DBManager.name = username.text;
+
+            //my php script always returns 0 and adds it at the beginning of any text, thats why we have to strip the 0 for our couponcode to work.
             string replacedString = www.downloadHandler.text.Replace("0", string.Empty);
 
-//            DBManager.code = int.Parse(www.downloadHandler.text.Split('\t')[1]);
             DBManager.code = replacedString;
 
 
@@ -58,16 +59,7 @@ public class Login : MonoBehaviour
         Debug.Log(DBManager.loggedIn);
     }
 
-    public void verifyInput()
-    {
-        //for now the register button only becomes interactible when the requirements match. but preferably it should always be interactable and give a popup notification
-        //if anything went wrong, only when everything is correct you should be able to create an account.
 
-            //submit.interactable = true;
-            //submit.interactable = (username.text.Length >= 8 && password.text.Length >= 1 && username.text.Contains("@") && username.text.Contains(".com") || username.text.Contains(".nl") );             
-          
-        //Debug.Log(submit.interactable);
-    }
 
     
 }

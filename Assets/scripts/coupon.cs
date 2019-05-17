@@ -12,6 +12,8 @@ public class coupon : MonoBehaviour
     public GameObject popup;
     public GameObject download;
 
+    public GameObject wrongCoup;
+
 
 
     public void callCoupon()
@@ -44,6 +46,7 @@ public class coupon : MonoBehaviour
         }
         else
         {
+                        wrongCoup.gameObject.SetActive(true);
             Debug.Log("incorrect code" + www.error);
         }
 
