@@ -16,14 +16,7 @@ public class prefabreference : MonoBehaviour
     {
         gm = GameObject.Find("manager");
         GManager = gm.GetComponent<gManager>();
-
-
     }
-
-    // void Start() {
-    //     Debug.Log(GManager.Zoeken);
-    // }
-
 
     public void sportenActive()
     {

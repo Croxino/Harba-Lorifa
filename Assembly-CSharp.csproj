@@ -425,7 +425,6 @@
      <Compile Include="Assets\scripts\searchFilter.cs" />
      <Compile Include="Assets\scripts\SetCameraHeight.cs" />
      <Compile Include="Assets\scripts\SpawnOnMap.cs" />
-     <Compile Include="Assets\scripts\testScriptaccess.cs" />
      <Compile Include="Assets\scripts\userIsLoggedin.cs" />
      <None Include="Assets\Resources\Mapbox\MapboxConfiguration.txt" />
      <None Include="Assets\Mapbox\Unity\Location\ExampleGpsTraces\LocationProviderAndroidNative.txt" />

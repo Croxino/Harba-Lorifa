@@ -154,6 +154,7 @@ ac7a2eaca6aec1beb32fe3a5ca6bab67 Assembly-CSharp.dll:Mapbox.Unity.MeshGeneration
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:Mapbox.Examples.PoiMarkerHelper
 4bd17a331b5e671b3d5edfcff0e2dc58 Assembly-CSharp.dll:Mapbox.Examples.SpawnOnMap
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.UniAndroidPermission
+a318a82d5abde553e75543c7b3aba918 XiaomiSupport.dll:AppStoresSupport.AppStoreSettings
 0077fc8e4fbae67f80e80ebd534de5a0 Vuforia.UnityExtensions.dll:Vuforia.AnchorBehaviour
 f8b139fcde9fda6214245df246415cc7 Vuforia.UnityExtensions.dll:Vuforia.AnchorInputListenerBehaviour
 71bb6a6b6c8f052f948db64c7dd3ca4f Vuforia.UnityExtensions.dll:Vuforia.BackgroundPlaneBehaviour
@@ -230,6 +231,7 @@ ae88cf5ed6578d128f4f31acea4d63ed Assembly-CSharp.dll:Mapbox.Unity.Utilities.Dont
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.BlinkLight
 19da73fcf567c3ca2b4c13de46a1058f Assembly-CSharp.dll:Mapbox.Unity.MeshGeneration.Data.AtlasInfo
 f2f2883bb6002e274434d8fe1421a30a Assembly-CSharp.dll:Mapbox.Unity.Utilities.MapVisualizerPerformance
+c10288ef63a47c7f60251bb29a5faf3c Assembly-CSharp.dll:.prefabreference
 c3ca68359ba3cdfb2598642816e97c83 Assembly-CSharp.dll:Mapbox.Examples.CameraMovement
 ebd9bd7e13193ed93c8e8b18df2d1f9c Assembly-CSharp.dll:Mapbox.Examples.Playground.ReverseGeocoderExample
 b3ab2106268377ffe25dd18ac23dca28 Unity.TextMeshPro.dll:TMPro.TMP_Asset
@@ -238,7 +240,7 @@ e65928076a0097edacbeecbcaabd5cc0 Assembly-CSharp.dll:Mapbox.Examples.HeroBuildin
 432fd4837de5044e10ec81354014b522 Assembly-CSharp.dll:Mapbox.Examples.Scripts.LogLocationProviderData
 0486b2d53a38dd980e5d3062b4e30fa4 Assembly-CSharp.dll:Mapbox.Unity.Location.EditorLocationProviderLocationLog
 8c362ed1d3d229b03c8cd704cd15ca04 Assembly-CSharp.dll:Mapbox.Unity.MeshGeneration.Modifiers.ModifierStackBase
-5836b19e00b45768697d516e26b4c677 Assembly-CSharp.dll:.coupon
+33b22272c96baf38d68c88b519c60d81 Assembly-CSharp.dll:.coupon
 349a799d64e943a09f8cff7ef463b0b4 Assembly-CSharp.dll:Mapbox.Unity.MeshGeneration.Modifiers.TagModifier
 138521932fe32c94be5a69c1db100e27 Assembly-CSharp.dll:Mapbox.Unity.Utilities.DebugTools.ScenesList
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:Mapbox.Unity.MeshGeneration.FeatureCollectionBase
@@ -251,6 +253,7 @@ ba6ef9e2082e09d9399eaef28d94d812 Assembly-CSharp.dll:Mapbox.Unity.MeshGeneration
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.TextMeshPro.dll:TMPro.TMP_SpriteAnimator
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:Mapbox.Unity.MeshGeneration.Interfaces.VectorLayerVisualizer
 ba6ef9e2082e09d9399eaef28d94d812 Assembly-CSharp.dll:Mapbox.Unity.MeshGeneration.Modifiers.UvModifier
+c997d867195f81d40e4bbfc23b306e5d Assembly-CSharp.dll:.gManager
 563660a00e6e81cb62dbadd1cbc099dc Assembly-CSharp.dll:Mapbox.Examples.AstronautMouseController
 3e8942e5b6faa01416f57e656c942729 Assembly-CSharp.dll:.SetCameraHeight
 57218997c1c8facfc9c494649a7995ac Assembly-CSharp.dll:Mapbox.Examples.ChangeShadowDistance
@@ -298,6 +301,7 @@ fb6a1ea36b4f6ef5948d283d93760765 UnityEngine.GoogleAudioSpatializer.dll:UnityEng
 5b0391b7e3d9ea9db6c0a8fbd0ca23f6 UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioSoundfieldExtension
 5b0391b7e3d9ea9db6c0a8fbd0ca23f6 UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioSourceExtension
 e9b1bb8625391eccd2ab11f9625b5536 Assembly-CSharp.dll:Mapbox.Unity.MeshGeneration.Modifiers.ReplaceFeatureCollectionModifier
+71bb6a6b6c8f052f948db64c7dd3ca4f UnityStore.dll:UnityEngine.Store.MainThreadDispatcher
 931f489e44eadf809e9310429c99dde5 UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioListenerExtension
 fb6a1ea36b4f6ef5948d283d93760765 UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioRoom
 5b0391b7e3d9ea9db6c0a8fbd0ca23f6 UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioSoundfieldExtension
@@ -307,7 +311,7 @@ d30406e93dfde99d69d2b1c0ea2559b1 Assembly-CSharp.dll:Mapbox.Unity.Location.Angle
 79c690a7a04380284d7886233794daaf Assembly-CSharp.dll:Mapbox.Unity.MeshGeneration.Modifiers.AddMonoBehavioursModifier
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.ImageDataFetcher
 a8dd989c3487c03fb71120ece2ef224b Assembly-CSharp.dll:.searchFilter
-06e4a986f58aaad10b64417fe666a2d4 Assembly-CSharp.dll:.Login
+897f18f163e02645e0532f711499233a Assembly-CSharp.dll:.Login
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.VectorDataFetcher
 a4f0a4f62100f1a4fb5cbe0e00dde83f Unity.TextMeshPro.dll:TMPro.TextMeshProUGUI
 ba6ef9e2082e09d9399eaef28d94d812 Assembly-CSharp.dll:Mapbox.Unity.MeshGeneration.Modifiers.DisableMeshRendererModifier
@@ -339,7 +343,7 @@ d791aa6007fa3640be1164ea75bb087d Unity.TextMeshPro.dll:TMPro.TMP_StyleSheet
 7bd336f889f512c1d4b12b39eec549c3 Assembly-CSharp.dll:Mapbox.Unity.Location.DeviceLocationProvider
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:Mapbox.Examples.ImmediatePositionWithLocationProvider
 67f2073ab00a2413a89dbb5e06ed6272 Assembly-CSharp.dll:Mapbox.Unity.MeshGeneration.Modifiers.SnapTerrainRaycastModifier
-c18450257284ae4d5088a9f8330dbba1 Assembly-CSharp.dll:.registration
+3e39e25a1f18bf0345884432bc5f44c0 Assembly-CSharp.dll:.registration
 c6666661329916e218bee7f5e79e60f5 Unity.TextMeshPro.dll:TMPro.TextMeshPro
 3165968ba45c74472d279ba04455fccb Unity.TextMeshPro.dll:TMPro.TMP_ColorGradient
 2a0f18826295e1d9d0b8f77c1ab8f6d5 Assembly-CSharp.dll:Mapbox.Unity.MeshGeneration.Modifiers.MapboxStylesColorModifier

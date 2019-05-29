@@ -37,14 +37,9 @@ public class Login : MonoBehaviour
             string replacedString = www.downloadHandler.text.Replace("0", string.Empty);
 
             DBManager.code = replacedString;
-
-
-
-            
             loggedin.gameObject.SetActive(true);
             profile.gameObject.SetActive(false);
             password.text = "";
-
         }
         else
         {

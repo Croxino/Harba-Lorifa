@@ -46,7 +46,7 @@ public class coupon : MonoBehaviour
         }
         else
         {
-                        wrongCoup.gameObject.SetActive(true);
+            wrongCoup.gameObject.SetActive(true);
             Debug.Log("incorrect code" + www.error);
         }
 
